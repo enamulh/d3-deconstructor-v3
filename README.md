@@ -48,8 +48,8 @@ Finally, navigate to [chrome://extensions](chrome://extensions), click "Load unp
 There are two possible ways to run the deconstructor.In the default mode, you can go to a webpage and click on the Deconstructor Chrome extension icon which will automatically show the deconstructor data in a new page.
 
 However, if you wish to run the Deconstructor automatically and store the results in the server you can change the following to parameters:
-js/injected.js: set sendDataToServer = true;
-js/injected.js: set DeconstrucOnLoad = true;
+js/injected.js: set *sendDataToServer = true;*
+js/injected.js: set *DeconstrucOnLoad = true;*
 Then recompile code again by using:
 
     node_modules/grunt-cli/bin/grunt browserify
