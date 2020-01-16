@@ -31,7 +31,7 @@ In addition to data and mark attributes, Deconstructor extracts the mappings bet
   * *params* - A set of parameters that describe the mapping.
 * **ids** - A list containing a unique ID for each node, representing its order in a traversal of its SVG tree. 
 
-#####Build
+###Build
 
 **Note:** You must have [Node](http://nodejs.org/) installed to build Deconstructor.
 
@@ -39,8 +39,28 @@ To build Deconstructor, first clone this repository and navigate to the cloned f
 
     git clone git://github.com/enamulh/d3-deconstructor-v3
     
-    cd d3-deconstructor
+    cd d3-deconstructor-v3
     npm install
     node_modules/grunt-cli/bin/grunt browserify
 
 Finally, navigate to [chrome://extensions](chrome://extensions), click "Load unpacked extension..." and select the cloned folder.
+
+There are two possible ways to run the deconstructor.In the default mode, you can go to a webpage and click on the Deconstructor Chrome extension icon which will automatically show the deconstructor data in a new page.
+
+However, if you wish to run the Deconstructor automatically and store the results in the server you can change the following to parameters:
+js/injected.js: set sendDataToServer = true;
+js/injected.js: set DeconstrucOnLoad = true;
+Then recompile code again by using:
+
+    node_modules/grunt-cli/bin/grunt browserify
+
+You will also need to run the node server by using following commands:
+
+    cd server
+    npm install
+    node serverD3Scrapper.js 
+
+**Known issues:** 1) Right now the deconstructor cannot extract data directly if the visualization is embedded within an *iframe*. However, it saves all the iframe urls in the iframe_url.csv file. Therefore, by loading the urls from the  iframe_url.csv, it is possible to deconstructor such visualizations.
+     
+
+
