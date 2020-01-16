@@ -8,6 +8,7 @@ Our deconstructor builds on Harper and Agrawala’s D3 Deconstructor (http://vis
 Enamul Hoque and Maneesh Agrawala, Searching the Visual Style and Structure of D3 Visualizations, IEEE Transactions on Visualization and Computer Graphics, 2019. 
 
 For citation please use:
+
 @inproceedings{hoque-vis-search-2019,
   title={Searching the Visual Style and Structure of D3 Visualizations},
   author={Hoque, Enamul and  Agrawala, Maneesh},
@@ -15,6 +16,7 @@ For citation please use:
   year={2019},
   organization={IEEE}
 }
+
 
 ### Usage
 
@@ -31,7 +33,7 @@ In addition to data and mark attributes, Deconstructor extracts the mappings bet
   * *params* - A set of parameters that describe the mapping.
 * **ids** - A list containing a unique ID for each node, representing its order in a traversal of its SVG tree. 
 
-###Build
+### Build
 
 **Note:** You must have [Node](http://nodejs.org/) installed to build Deconstructor.
 
