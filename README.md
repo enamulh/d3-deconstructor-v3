@@ -37,7 +37,8 @@ In addition to data and mark attributes, Deconstructor extracts the mappings bet
 
 To build Deconstructor, first clone this repository and navigate to the cloned folder.  Then, install dependencies via NPM and run [Browserify](http://browserify.org/).
 
-    git clone git://github.com/ucbvislab/d3-deconstructor
+    git clone git://github.com/enamulh/d3-deconstructor-v3
+    
     cd d3-deconstructor
     npm install
     node_modules/grunt-cli/bin/grunt browserify

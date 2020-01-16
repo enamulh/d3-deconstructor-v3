@@ -1,0 +1,47 @@
+{
+  "name": "d3-deconstructor",
+  "description": "",
+  "version": "1.0.4",
+  "main": "./js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enamulh/d3-deconstructor-v3.git"
+  },
+  "author": "Jonathan Harper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enamulh/d3-deconstructor-v3/issues"
+  },
+  "homepage": "https://github.com/enamulh/d3-deconstructor-v3",
+  "browserify-shim": {
+    "lib/angular.js": {
+      "exports": "angular"
+    }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "devDependencies": {
+    "browserify": "^5.11.2",
+    "browserify-shim": "^3.7.0",
+    "circular-json": "^0.1.6",
+    "filesaver.js": "^0.1.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.0.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "dependencies": {
+    "jquery": "^2.1.1",
+    "angular": "^1.3.1",
+    "bootstrap": "^3.2.0",
+    "d3": "^3.4.11",
+    "d3-decon-lib": "git://github.com/enamulh/d3-decon-lib-v3",
+    "underscore": "^1.7.0"
+  }
+}
