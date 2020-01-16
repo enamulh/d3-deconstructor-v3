@@ -1,4 +1,4 @@
-var DeconstrucOnLoad = true;
+var DeconstrucOnLoad = false;
 doInject();
 
 //Enamul: Did this to deconstruct on page load

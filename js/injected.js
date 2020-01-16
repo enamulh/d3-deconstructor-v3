@@ -1,4 +1,4 @@
-var sendDataToServer = true;
+var sendDataToServer = false;
 
 var pathSeg = require('../lib/pathSeg.js');
 var VisDeconstruct = require('d3-decon-lib').Deconstruct;
