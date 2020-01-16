@@ -20,7 +20,7 @@ For citation please use:
 
 ### Usage
 
-To extract data from a D3 visualization the user right clicks on the visualization and selects "Deconstruct Visualization" in the context menu.  Deconstructor then creates a window showing the data tables for each group of elements.  Then, you can save visualization data as JSON or CSV.
+To extract data from a D3 visualization the user  clicks on the  Deconstructor extension icon.  Deconstructor then creates a window showing the data tables for each group of elements.  Then, you can save visualization data as JSON or CSV.
 
 In addition to data and mark attributes, Deconstructor extracts the mappings between the data and marks in the visualizations.  These mappings are saved when saving as JSON only.  JSON output is an array of "schema" objects which have several properties:
 
@@ -56,11 +56,12 @@ Then recompile code again by using:
 
     node_modules/grunt-cli/bin/grunt browserify
 
-You will also need to run the node server by using following commands:
+To run the node server that stores the deconstruction data, you need to run following commands:
 
     cd server
     npm install
     node serverD3Scrapper.js 
+You also need to create credentials for running the server. In particular create a private key *key.pem* and a certificate *cert.pem* files and keep them in the encryption directory.
 
 **Known issues:** 1) Right now the deconstructor cannot extract data directly if the visualization is embedded within an *iframe*. However, it saves all the iframe urls in the iframe_url.csv file. Therefore, by loading the urls from the  iframe_url.csv, it is possible to deconstructor such visualizations.
      
