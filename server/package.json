@@ -1,0 +1,32 @@
+{
+  "name": "serverD3Search",
+  "version": "1.0.0",
+  "description": "Server that stores D3 deconstruction data",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enamulh/D3-deconstructor-v3"
+  },
+  "keywords": [
+    "restful"
+  ],
+  "author": "enamul hoque",
+  "bugs": {
+    "url": "https://github.com/enamulh/D3-deconstructor-v3"
+  },
+  "homepage": "https://github.com/enamulh/D3-deconstructor-v3",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "elasticsearch": "^13.3.1",
+    "express": "^4.16.3",
+    "body-parser": "^1.18.2",
+    "promise": "^8.0.1",
+    "request": "^2.88.0"
+  }
+}
